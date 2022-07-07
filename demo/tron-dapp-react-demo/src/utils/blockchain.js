@@ -11,7 +11,7 @@ const privateKey = chain.privateKey;
 
 const mainchain = new TronWeb({
   fullHost: chain.fullHost,
-  privateKey
+  privateKey: chain.privateKey
 });
 
 export const triggerSmartContract = async (address, functionSelector, options = {}, parameters = []) => {

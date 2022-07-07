@@ -195,6 +195,11 @@ export default class NetworkStore {
           self.tronWeb = window.tronWeb;
           self.defaultAccount = self.tronWeb.defaultAddress.base58;
           window.defaultAccount = self.defaultAccount;
+          console.log('default account', self.defaultAccount);
+
+          // test this
+          //   self.tronWeb.tronLink.request({method: 'tron_requestAccounts'})
+
           self.isConnected = true;
           cb && cb();
           this.setVariablesInterval(); // Global scheduled tasks

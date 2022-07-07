@@ -10,6 +10,7 @@ import { emptyReactNode, formatNumber, isAddress, BigNumber } from '../utils/hel
 @inject('network')
 @inject('dapp')
 @inject('system')
+@inject('hello')
 @observer
 class UserList extends React.Component {
   constructor(props) {
@@ -18,7 +19,7 @@ class UserList extends React.Component {
       lang: window.localStorage.getItem('lang') || intl.options.currentLocale,
       modalVisible: false,
       to: '',
-      amount: ''
+      amount: '' // greeting
     };
   }
 
@@ -38,6 +39,12 @@ class UserList extends React.Component {
     const { to, amount } = this.state;
     const amountToken = BigNumber(amount).times(BigNumber(10).pow(Config.defaultDecimal))._toHex(); // for a large amount, we can pass value with hex string
     await this.props.system.transferToken(to, amountToken);
+  };
+
+  greeting = async () => {
+    const { amount } = this.state;
+    const newGreeting = amount;
+    await this.props.hello.setGreeting(newGreeting);
   };
 
   changeTo = e => {
@@ -120,6 +127,7 @@ class UserList extends React.Component {
   render() {
     const { modalVisible, to, amount } = this.state;
     const { userList } = this.props.dapp;
+    const currentGreeting = this.props.hello.getGreeting();
     return (
       <>
         {userList && (
@@ -145,11 +153,15 @@ class UserList extends React.Component {
                 <div style={{ marginTop: '20px' }}>{intl.get('transfer.amount')}</div>
                 <Input
                   value={amount}
-                  placeholder="please input the transfer amount"
+                  placeholder="please input the amount / title"
                   onChange={this.changeAmount}
                 ></Input>
-                <div className="footer" style={{ textAlign: 'center', marginTop: '20px' }}>
+                {/* <div className="footer" style={{ textAlign: 'center', marginTop: '20px' }}>
                   <Button onClick={this.transfer}>{intl.get('transfer.confirm')}</Button>
+                </div> */}
+
+                <div className="footer" style={{ textAlign: 'center', marginTop: '20px' }}>
+                  <Button onClick={this.greeting}>Set greeting</Button>
                 </div>
               </div>
             </Modal>

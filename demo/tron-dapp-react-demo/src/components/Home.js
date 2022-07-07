@@ -1,6 +1,7 @@
 import React from 'react';
 import { inject, observer } from 'mobx-react';
 import HeaderPage from './Header';
+import HelloCard from './Hello';
 import UserList from './UserList';
 
 @inject('dapp')
@@ -21,6 +22,7 @@ class Home extends React.Component {
     return (
       <div>
         <HeaderPage mountedActions={this.mountedActions} />
+        <HelloCard />
         <UserList />
       </div>
     );

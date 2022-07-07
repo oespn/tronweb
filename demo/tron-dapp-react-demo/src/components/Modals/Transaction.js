@@ -13,6 +13,7 @@ import authorizeIcon from '../../assets/images/authorize.svg';
 
 @inject('network')
 @inject('system')
+@inject('contract')
 @observer
 class Transaction extends React.Component {
   constructor() {
@@ -28,6 +29,7 @@ class Transaction extends React.Component {
   };
   render() {
     const { transModalInfo } = this.props.system;
+
     const { visible, step, txId, title, obj, title2, title3, title4 } = transModalInfo;
     return (
       <Modal

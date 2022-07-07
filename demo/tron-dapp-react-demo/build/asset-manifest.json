@@ -1,0 +1,31 @@
+{
+  "files": {
+    "static/js/0.e0107d59.chunk.js": "/static/js/0.e0107d59.chunk.js",
+    "static/css/1.8c55b0f9.chunk.css": "/static/css/1.8c55b0f9.chunk.css",
+    "static/js/1.55bcb4ae.chunk.js": "/static/js/1.55bcb4ae.chunk.js",
+    "main.css": "/static/css/main.e345139f.chunk.css",
+    "main.js": "/static/js/main.b7636823.chunk.js",
+    "runtime-main.js": "/static/js/runtime-main.b907984a.js",
+    "static/css/4.adf0d68f.chunk.css": "/static/css/4.adf0d68f.chunk.css",
+    "static/js/4.e63dc04b.chunk.js": "/static/js/4.e63dc04b.chunk.js",
+    "static/js/5.6715b5a9.chunk.js": "/static/js/5.6715b5a9.chunk.js",
+    "index.html": "/index.html",
+    "static/css/1.8c55b0f9.chunk.css.map": "/static/css/1.8c55b0f9.chunk.css.map",
+    "static/css/4.adf0d68f.chunk.css.map": "/static/css/4.adf0d68f.chunk.css.map",
+    "static/css/main.e345139f.chunk.css.map": "/static/css/main.e345139f.chunk.css.map",
+    "static/js/4.e63dc04b.chunk.js.LICENSE.txt": "/static/js/4.e63dc04b.chunk.js.LICENSE.txt",
+    "static/media/mainLogo.6b54fa2c.png": "/static/media/mainLogo.6b54fa2c.png",
+    "static/media/tronlinkBlue.b430fefe.svg": "/static/media/tronlinkBlue.b430fefe.svg",
+    "static/media/tronlinkLogo.7d5edbba.svg": "/static/media/tronlinkLogo.7d5edbba.svg",
+    "static/media/tronlinkRightArrow.8f700328.svg": "/static/media/tronlinkRightArrow.8f700328.svg",
+    "static/media/walletFail.371bea5e.svg": "/static/media/walletFail.371bea5e.svg",
+    "static/media/walletSuccess.2ef26ea5.svg": "/static/media/walletSuccess.2ef26ea5.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b907984a.js",
+    "static/css/4.adf0d68f.chunk.css",
+    "static/js/4.e63dc04b.chunk.js",
+    "static/css/main.e345139f.chunk.css",
+    "static/js/main.b7636823.chunk.js"
+  ]
+}
